@@ -1,0 +1,31 @@
+{% extends "inicio/encabezado.html" %} {% block titulo %} Inicio {% endblock %} {% block contenido %}
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Bienvenido a la aplicación de Tareas Escolares</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Esta aplicación fue desarrollada con Django, python y Bootstrap.
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <p>
+                Para ver las tareas pendientes, haz click en el siguiente enlace:
+            </p>
+            <p>
+                <a href="{% url 'Pendientes' %}">Tareas pendientes</a>
+            </p>
+        </div>
+    </div>
+
+
+
+
+    {% endblock %}

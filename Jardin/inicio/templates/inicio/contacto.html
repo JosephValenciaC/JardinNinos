@@ -1,0 +1,39 @@
+{% extends "inicio/encabezado.html" %} {% block titulo %} Contacto {% endblock %} {% block contenido %}
+
+
+
+
+<div class="col-5 container">
+    <div class="row-4">
+        <div class="col-md-5">
+            <h1>Area Niños</h1>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Nombre del Alumno</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Javier Alexis">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Grupo</label>
+            <select class="form-select" aria-label="Default select example">
+                <option selected>1A</option>
+                <option value="1">1A</option>
+                <option value="2">1B</option>
+                <option value="3">2A</option>
+                <option value="4">2B</option>
+              </select>
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Javi_1A@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Nota</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="input-group mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Subir Tarea</label><br>
+        </div>
+        <div class="input-group mb-3">
+            <input type="file" class="form-control" id="inputGroupFile01">
+        </div>
+        <button type="button" class="btn btn-outline-primary">Enviar Tarea</button> {% endblock %}
